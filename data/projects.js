@@ -1,0 +1,97 @@
+export const projects = [
+  {
+    id: 'turnst1le',
+    name: 'TurnSt1le',
+    fancy: '🌀',
+    icon: 'fa-solid fa-terminal',
+    language: 'Python 3.10',
+    category: 'C2 / Offensive',
+    description:
+      'Command-and-control utility with a multi-client interactive listener and an outbound client shell. Robust length-prefixed wire protocol keeps command output clean.',
+    capabilities: [
+      'multi-client shell',
+      'length-prefixed protocol',
+      'auto-reconnect',
+      'exit-status reporting',
+      'colorized CLI',
+      'cross-platform',
+    ],
+    notice: 'authorized testing only',
+    repo: 'https://github.com/noahwatson-369',
+  },
+  {
+    id: 'posca',
+    name: 'PoSca',
+    fancy: '🧭',
+    icon: 'fa-solid fa-location-crosshairs',
+    language: 'C++17',
+    category: 'Network Recon',
+    description:
+      'Fast multi-threaded TCP port scanner with a bounded worker pool. Scans single ports, ranges or curated lists, and reports open services by name with live progress.',
+    capabilities: [
+      'thread-pool concurrency',
+      'single / range / quick scans',
+      'service-name detection',
+      'live progress',
+      'configurable timeout',
+      'Winsock / POSIX',
+    ],
+    notice: 'permissioned recon only',
+    repo: 'https://github.com/noahwatson-369',
+  },
+  {
+    id: 'caveira',
+    name: 'Caveira',
+    fancy: '🎹',
+    icon: 'fa-solid fa-keyboard',
+    language: 'C++17',
+    category: 'Monitoring',
+    description:
+      'Cross-platform keystroke logger for authorized monitoring. Win32 low-level hook or X11 capture, async queue-based writer, timestamps, active-window titles and key-frequency reports.',
+    capabilities: [
+      'Win32 low-level hook',
+      'X11 capture',
+      'async writer',
+      'window-title capture',
+      'frequency reports',
+      'layout-aware keys',
+    ],
+    notice: 'own systems only',
+    repo: 'https://github.com/noahwatson-369',
+  },
+  {
+    id: 'metcha',
+    name: 'Metcha',
+    fancy: '🏷️',
+    icon: 'fa-solid fa-file-signature',
+    language: 'Python 3.10',
+    category: 'Reverse / PE',
+    description:
+      'Reads, modifies and rewrites version-info metadata embedded in Windows executables and DLLs. Targeted edits, built-in/custom presets, random generation and batch processing.',
+    capabilities: [
+      'PE metadata reader',
+      'field overwrite',
+      'presets + JSON',
+      'random generator',
+      'batch processing',
+      'timestamp rewrite',
+    ],
+    notice: 'sandbox research',
+    repo: 'https://github.com/noahwatson-369',
+  },
+  {
+    id: 'proxy-worker',
+    name: 'Simple Proxy Worker',
+    fancy: '🍊',
+    icon: 'fa-brands fa-cloudflare',
+    language: 'JavaScript · Workers',
+    category: 'Cloud / Serverless',
+    description:
+      'Lightweight serverless Cloudflare Worker that relays custom data to a Telegram bot over HTTP POST. Fast deploy, minimal config, drop-in for any project.',
+    capabilities: ['serverless endpoint', 'Telegram bot relay', 'HTTP POST', 'one-file deploy'],
+    notice: 'your own data only',
+    repo: 'https://github.com/noahwatson-369',
+  },
+];
+
+export const projectFilters = ['All', 'C2 / Offensive', 'Network Recon', 'Monitoring', 'Reverse / PE', 'Cloud / Serverless'];

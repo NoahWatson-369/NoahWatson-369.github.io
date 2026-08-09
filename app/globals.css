@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #060a13;
+  color: #e6edf7;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #060a13;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #38bdf8, #a78bfa);
+  border-radius: 999px;
+}
+
+/* gradient text */
+.grad-text {
+  background-image: linear-gradient(90deg, #38bdf8, #a78bfa 50%, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* gradient bar underline for hover */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+  transition: width 0.35s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* project card top gradient */
+.p-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.p-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* typewriter cursor */
+.type-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  margin-left: 3px;
+  vertical-align: -3px;
+  background: #38bdf8;
+  animation: blink 1s steps(2) infinite;
+}
+
+.keyframes {
+  animation-name: blink, bob, floaty;
+}
