@@ -17,7 +17,7 @@ export const projects = [
       'cross-platform',
     ],
     notice: 'authorized testing only',
-    repo: 'https://github.com/noahwatson-369',
+    repo: 'https://github.com/NoahWatson-369/Turnst1le-simple-python-reverse-shell',
   },
   {
     id: 'posca',
@@ -37,7 +37,7 @@ export const projects = [
       'Winsock / POSIX',
     ],
     notice: 'permissioned recon only',
-    repo: 'https://github.com/noahwatson-369',
+    repo: 'https://github.com/NoahWatson-369/Posca-ultra-fast-port-scanner',
   },
   {
     id: 'caveira',
@@ -57,7 +57,7 @@ export const projects = [
       'layout-aware keys',
     ],
     notice: 'own systems only',
-    repo: 'https://github.com/noahwatson-369',
+    repo: 'https://github.com/NoahWatson-369/Caveira-professional-keylogger',
   },
   {
     id: 'metcha',
@@ -77,7 +77,7 @@ export const projects = [
       'timestamp rewrite',
     ],
     notice: 'sandbox research',
-    repo: 'https://github.com/noahwatson-369',
+    repo: 'https://github.com/NoahWatson-369/Metcha-pe-file-metadata-editor',
   },
   {
     id: 'proxy-worker',
@@ -90,7 +90,7 @@ export const projects = [
       'Lightweight serverless Cloudflare Worker that relays custom data to a Telegram bot over HTTP POST. Fast deploy, minimal config, drop-in for any project.',
     capabilities: ['serverless endpoint', 'Telegram bot relay', 'HTTP POST', 'one-file deploy'],
     notice: 'your own data only',
-    repo: 'https://github.com/noahwatson-369',
+    repo: 'https://github.com/NoahWatson-369/cloudflare-telegram-relay',
   },
 ];
 
